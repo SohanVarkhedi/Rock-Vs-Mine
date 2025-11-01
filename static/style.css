@@ -1,7 +1,11 @@
+/* === Simple & Catchy Modern Theme === */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
 body {
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  font-family: 'Poppins', sans-serif;
-  color: white;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,41 +14,68 @@ body {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 15px;
   text-align: center;
   width: 60%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #00e6b8;
+  letter-spacing: 1px;
 }
 
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
   border: none;
-  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1em;
   resize: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 8px #00e6b8;
 }
 
 button {
   margin-top: 20px;
-  padding: 10px 25px;
+  padding: 12px 28px;
   border: none;
   border-radius: 10px;
-  background-color: #1abc9c;
+  background: linear-gradient(90deg, #00e6b8, #009ffd);
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  background-color: #16a085;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
 }
 
 .result {
   margin-top: 20px;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #00e6b8;
 }
